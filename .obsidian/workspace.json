@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "09a7ba71558338f5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Readme.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "targets/2023-10-28.md",
+                "file": "Readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "targets/2023-10-28.md",
+                "file": "Readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "targets/2023-10-28.md"
+                "file": "Readme.md"
               }
             }
           }
@@ -146,6 +159,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "780ff7ba2cfc3833",
-  "lastOpenFiles": []
+  "active": "09a7ba71558338f5",
+  "lastOpenFiles": [
+    "targets/2023-10-28.md",
+    "Readme.md"
+  ]
 }
