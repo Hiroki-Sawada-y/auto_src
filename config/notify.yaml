@@ -1,0 +1,9 @@
+custom:
+  - id: webhook
+
+    custom_webhook_url: https://oapi.dingtalk.com/robot/send?access_token=acb6f5e3b7f2cc267be999cb37803c9170be7262373495d50d30b2ecb9b169be
+    custom_method: POST
+    custom_format: '{"msgtype": "text","text": {"content":"漏洞信息：{{data}}"}}'
+    custom_headers:
+      Content-Type: application/json
+
