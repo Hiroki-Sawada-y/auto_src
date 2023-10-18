@@ -60,10 +60,13 @@ WORKDIR /home/src/xray
 RUN /home/src/xray/xray
 RUN rm -rf /home/src/xray/xray.zip
 
-# 添加定时任务以拉取 GitHub 项目
-#RUN cd /home/src && git clone https://github.com/Hiroki-Sawada-y/auto_src
-#RUN (crontab -l ; echo "0 6 * * * cd /home/src/auto_src && git pull https://github.com/Hiroki-Sawada-y/auto_src ") | crontab -
+#添加定时任务以拉取 GitHub 项目
+RUN git clone https://github.com/Hiroki-Sawada-y/auto_src
+RUN (crontab -l ; echo "0 6 * * * cd /home/src/auto_src && git pull https://github.com/Hiroki-Sawada-y/auto_src ") | crontab -
 
+# 脚本自动胡
+COPY auto.sh /home/src/xray/auto.sh
+COPY ./config/notify.yaml /root/.config/notify/provider-config.yaml
 
 # 启动 
 CMD ["cron", "-f"]

@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "source",
+                "file": "targets/2023-10-18.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "targets/2023-10-18.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "targets/2023-10-18.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "targets/2023-10-18.md"
               }
             }
           }
@@ -148,19 +148,18 @@
   },
   "active": "09a7ba71558338f5",
   "lastOpenFiles": [
-    "Linux/auto.sh~",
-    "Linux/4913",
-    "Linux/Dockerfile~",
-    "Windows/Dockerfile~",
-    "Windows/4913",
-    "Windows/Dockerfile",
-    "Windows/xscan.zip",
-    "Windows",
-    "targets/2023-10-28.md",
-    "targets",
-    "config/notify.yaml",
-    "config",
     "README.md",
+    "Dockerfile~",
+    "4913",
+    "xray.zip",
+    "Dockerfile",
+    "auto.sh",
+    "Linux/Dockerfile~",
+    "Linux/4913",
+    "Linux/nuclei_results.txt",
+    "Linux/combined_alive.txt",
+    "Linux/ips.txt",
+    "targets/2023-10-18.md",
     "Linux/targets/2023-10-28.md",
     "Linux/README.md"
   ]
