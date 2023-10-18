@@ -148,19 +148,20 @@
   },
   "active": "09a7ba71558338f5",
   "lastOpenFiles": [
+    "Linux/auto.sh~",
+    "Linux/4913",
+    "Linux/Dockerfile~",
+    "Windows/Dockerfile~",
+    "Windows/4913",
+    "Windows/Dockerfile",
+    "Windows/xscan.zip",
+    "Windows",
     "targets/2023-10-28.md",
     "targets",
     "config/notify.yaml",
     "config",
     "README.md",
-    "xscan.zip",
-    "Linux/xscan.zip",
-    "Linux/xray.zip",
     "Linux/targets/2023-10-28.md",
-    "Linux/targets",
-    "Linux/README.md",
-    "Linux/Dockerfile",
-    "Linux/config/notify.yaml",
-    "Linux/config"
+    "Linux/README.md"
   ]
 }

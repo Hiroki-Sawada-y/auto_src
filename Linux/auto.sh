@@ -4,9 +4,9 @@
 
 # 使用chaospy，只下载有赏金资产数据
 
-./chaospy.py --download-new
+#./chaospy.py --download-new
 
-./chaospy.py --download-rewards  #下载所有赏金资产
+#./chaospy.py --download-rewards  #下载所有赏金资产
 
 #./chaospy.py  --download-bugcrowd 下载 BugCrowd 资产
 

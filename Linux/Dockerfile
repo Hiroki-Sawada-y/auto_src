@@ -51,22 +51,18 @@ RUN chsh -s /bin/zsh root
 # USER pentester
 
 # 创建工作目录并设置为默认目录
-WORKDIR /home/src
-RUN mkdir xray && cd xray
+RUN mkdir xray
 COPY xray.zip /home/src/xray/xray.zip
-RUN unzip /home/src/xray/xray.zip
+RUN unzip /home/src/xray/xray.zip -d /home/src/xray
+RUN  chmod +x /home/src/xray/xray_linux_amd64
+RUN mv /home/src/xray/xray_linux_amd64 /home/src/xray/xray
+WORKDIR /home/src/xray
+RUN /home/src/xray/xray
+RUN rm -rf /home/src/xray/xray.zip
 
 # 添加定时任务以拉取 GitHub 项目
 #RUN cd /home/src && git clone https://github.com/Hiroki-Sawada-y/auto_src
 #RUN (crontab -l ; echo "0 6 * * * cd /home/src/auto_src && git pull https://github.com/Hiroki-Sawada-y/auto_src ") | crontab -
-
-
-
-# xscan
-RUN dpkg --add-architecture i386 && apt-get update && apt-get install -y wine64
-RUN mkdir /home/src/xscan && cd /home/src/xscan
-COPY xscan.zip /home/src/xscan/xscan.zip
-RUN unzip /home/src/xscan/xscan.zip
 
 
 # 启动 
