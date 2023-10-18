@@ -16,7 +16,8 @@ RUN apt-get install -y \
     sqlmap \
     dirsearch \
     cron \
-    vim 
+    vim \
+    unzip 
 
 # 安装 Go
 RUN wget "https://golang.google.cn/dl/go1.21.3.linux-amd64.tar.gz"
@@ -51,10 +52,21 @@ RUN chsh -s /bin/zsh root
 
 # 创建工作目录并设置为默认目录
 WORKDIR /home/src
-
+RUN mkdir xray && cd xray
+RUN wget https://github.com/NHPT/Xray_Cracked/releases/download/v1.9.11/xray_linux_amd64
+RUn wget https://github.com/NHPT/Xray_Cracked/releases/download/v1.9.11/xray-license.lic
 # 添加定时任务以拉取 GitHub 项目
 RUN cd /home/src && git clone https://github.com/Hiroki-Sawada-y/auto_src
 RUN (crontab -l ; echo "0 6 * * * cd /home/src/auto_src && git pull https://github.com/Hiroki-Sawada-y/auto_src ") | crontab -
+
+
+
+# xscan
+RUN dpkg --add-architecture i386 && apt-get update && apt-get install -y wine32
+RUN mkdir /home/src/xscan
+COPY xscan.zip /home/src/xscan
+RUN unzip xscan.zip
+
 
 # 启动 
 CMD ["cron", "-f"]
