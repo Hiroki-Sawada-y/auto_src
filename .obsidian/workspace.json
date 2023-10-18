@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c452b267b0825919",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "targets/2023-10-28.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "09a7ba71558338f5",
             "type": "leaf",
             "state": {
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -162,9 +149,18 @@
   "active": "09a7ba71558338f5",
   "lastOpenFiles": [
     "targets/2023-10-28.md",
-    "Dockerfile~",
-    "4913",
+    "targets",
+    "config/notify.yaml",
+    "config",
+    "README.md",
     "xscan.zip",
-    "README.md"
+    "Linux/xscan.zip",
+    "Linux/xray.zip",
+    "Linux/targets/2023-10-28.md",
+    "Linux/targets",
+    "Linux/README.md",
+    "Linux/Dockerfile",
+    "Linux/config/notify.yaml",
+    "Linux/config"
   ]
 }
