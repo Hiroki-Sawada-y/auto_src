@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "targets/2023-10-18.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "targets/2023-10-18.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "targets/2023-10-18.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "targets/2023-10-18.md"
+                "file": "README.md"
               }
             }
           }
@@ -146,8 +146,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "09a7ba71558338f5",
+  "active": "780ff7ba2cfc3833",
   "lastOpenFiles": [
+    "targets/2023-10-18.md",
+    "state.txt",
+    "新建 文本文档.txt",
     "README.md",
     "Dockerfile~",
     "4913",
@@ -157,9 +160,6 @@
     "Linux/Dockerfile~",
     "Linux/4913",
     "Linux/nuclei_results.txt",
-    "Linux/combined_alive.txt",
-    "Linux/ips.txt",
-    "targets/2023-10-18.md",
     "Linux/targets/2023-10-28.md",
     "Linux/README.md"
   ]

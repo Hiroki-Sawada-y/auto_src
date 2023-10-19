@@ -17,8 +17,10 @@ RUN apt-get install -y \
     dirsearch \
     cron \
     vim \
-    unzip 
-
+    unzip \
+    naabu \
+    subfinder \
+    host 
 # 安装 Go
 RUN wget "https://golang.google.cn/dl/go1.21.3.linux-amd64.tar.gz"
 RUN tar -C /usr/local -xzf "go1.21.3.linux-amd64.tar.gz"
