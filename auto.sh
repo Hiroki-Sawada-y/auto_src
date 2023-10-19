@@ -4,7 +4,7 @@
 current_date=$(date +"%Y-%m-%d")
 
 # 构造文件名，例如：2023-09-10.md
-file_name="/home/auto_src/targets/$current_date.md"
+file_name="/home/src/xray/auto_src/targets/$current_date.md"
 
 # 1. 从当前日期文件中逐行读取子域名，并使用subfinder进行子域名收集
 while IFS= read -r line
@@ -35,8 +35,12 @@ httpx -l "ip_port.txt" -o "ips_alive.txt"
 httpx -l "sub_port.txt" -o "sub_alive.txt"
 
 # 合并活动验证后的文件为一个文件
-cat ips_alive.txt sub_alive.txt > combined_alive.txt
+cat ips_alive.txt sub_alive.txt > combined_alive_0.txt
 
+# 使用 dirsearch 进行列表扫描
+while read -r directory; do
+    dirsearch -u "$directory" -e php,html,js -o combined_alive.txt
+done < combined_alive_0.txt
 
 echo "开始nuclei扫描" | notify -silent
 # 使用nuclei扫描
